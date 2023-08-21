@@ -13,7 +13,6 @@ function App() {
   const[searchResults, setSearchResults] = useState(null);
   const[keywords, setKeywords] = useState('');
   const[gameYear, setGameYear] = useState('');
-  const[genre, setGenre] = useState('')
 
   useEffect(() => {
     if(localStorage) {
@@ -25,7 +24,7 @@ function App() {
         saveGames(games);
       }
     }
-  },[]);
+  }, []);
 
   const saveGames = (games) => {
     setAllGames(games);
@@ -85,7 +84,7 @@ function App() {
   genre: "Roguelike",
   developer: "Blizzard Entertainment",
   publisher: "Electronic Arts",
-  image:"images/diablo.jpeg"
+  image: require("./images/diablo.jpeg")
 }, {
   id:nanoid(),
   name: "Legend of Zelda: Ocarina of Time",
@@ -93,7 +92,7 @@ function App() {
   genre: "Action-Adventure",
   developer: "Nintendo",
   publisher: "Nintendo",
-  image:"images/lozoot.jpg"
+  image: require("./images/lozoot.jpg")
 }, {
   id:nanoid(),
   name: "Grand Theft Auto III",
@@ -101,7 +100,7 @@ function App() {
   genre: "Action-Adventure",
   developer: "DMA Design",
   publisher: "Rockstar Games",
-  image:"images/gta3.jpg"
+  image: require("./images/gta3.jpg")
 }, {
   id:nanoid(),
   name: "Metroid Prime",
@@ -109,7 +108,7 @@ function App() {
   genre: "FPS",
   developer: "Retro Studios",
   publisher: "Nintendo",
-  image:"images/metroidprime.jpeg"
+  image: require("./images/metroidprime.jpeg")
 }, {
   id:nanoid(),
   name: "World of Warcraft",
@@ -117,7 +116,7 @@ function App() {
   genre: "MMO",
   developer: "Blizzard",
   publisher: "Blizzard",
-  image:"images/wow.png"
+  image: require("./images/wow.png")
 }, {
   id:nanoid(),
   name: "Resident Evil 4",
@@ -125,7 +124,7 @@ function App() {
   genre: "Horror",
   developer: "Capcom",
   publisher: "Capcom",
-  image:"images/re4.jpg"
+  image: require("./images/re4.jpg")
 }, {
   id:nanoid(),
   name: "Super Mario Galaxy",
@@ -133,7 +132,7 @@ function App() {
   genre: "Platformer",
   developer: "Nintendo",
   publisher: "Nintendo",
-  image:"images/smg.jpg"
+  image: require("./images/smg.jpg")
 }, {
   id:nanoid(),
   name: "The Witcher 3: Wild Hunt",
@@ -141,7 +140,7 @@ function App() {
   genre: "Action-Adventure",
   developer: "CD Projekt RED",
   publisher: "Warner Bros. Games.",
-  image:"images/wwh.jpg"
+  image: require("./images/wwh.jpg")
 }, {
   id:nanoid(),
   name: "Legend of Zelda: Breath of the Wild",
@@ -149,7 +148,7 @@ function App() {
   genre: "Action-Adventure",
   developer: "Nintendo",
   publisher: "Nintendo",
-  image:"images/bow.jpg"
+  image: require("./images/bow.jpg")
 }, {
   id:nanoid(),
   name: "Elden Ring",
@@ -157,7 +156,7 @@ function App() {
   genre: "Action-RPG",
   developer: "FromSoftware Inc.",
   publisher: "FromSoftware Inc.",
-  image:"images/elden.jpeg"
+  image: require("./images/elden.jpeg")
   }];
 
 
